@@ -13,7 +13,6 @@ else
     string jsonProductos = File.ReadAllText(pathProductos);
     List<Productos> listaProductos = JsonSerializer.Deserialize<List<Productos>>(jsonProductos)!;
 
-    // Ahora la lista es fuertemente tipada con tu nueva clase
     List<ProductoReporte> reporte = new List<ProductoReporte>();
 
     foreach (Productos producto in listaProductos)
